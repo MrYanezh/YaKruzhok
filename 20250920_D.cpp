@@ -16,5 +16,4 @@ int main() {
         if (i != 25) cout << " ";
     }
     system ("pause");
-    // Тест для Гита
 }
