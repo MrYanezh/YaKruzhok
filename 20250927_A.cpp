@@ -11,18 +11,14 @@ int main() {
     int k = 0;
     cin >> n;
     vector<int> v(n);
-    while (i < n) 
-    {
+    while (i < n) {
         cin >> v[i];
         i++;
     }
-    while (j < n-1)
-    {
+    while (j < n-1) {
         k = 0;
-        while (k < n-j-1)
-        {
-            if (v[k] > v[k+1])
-            {
+        while (k < n-j-1) {
+            if (v[k] > v[k+1]) {
                 swap(v[k], v[k+1]);
             }
             k++;
@@ -30,14 +26,13 @@ int main() {
         j++;
     }
 // Вывод массива, C++ по-другому не умеет)))
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cout << v[i];
         if (i < n - 1) {
             cout << " ";
         }
     }
     cout << endl;
-    system("pause");
+    // system("pause");
     return 0;
 }
